@@ -2,3 +2,6 @@ h1,h2 {font-family: "Libre Bodoni", serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;}
+p{
+     font-family: "Urbanist", sans-serif;
+}
