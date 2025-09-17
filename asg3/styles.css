@@ -5,3 +5,15 @@ h1,h2,h3 {font-family: "Libre Bodoni", serif;
 p{
      font-family: "Urbanist", sans-serif;
 }
+/* styles.css */
+h1 {
+  color: #2c3e50; /* dark blue */
+}
+
+h2 {
+  color: #e74c3c; /* red */
+}
+
+h3 {
+  color: #27ae60; /* green */
+}
