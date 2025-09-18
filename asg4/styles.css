@@ -16,9 +16,10 @@ h1 {
          font-family: "Libre Bodoni", serif;
          font-weight: normal;       
          color: #FF007F; 
-         font-size: 3em;
+         font-size: 5em;
          margin:0;
          text-align: center;
+         background-color: White;
 }
 
 h2 {
