@@ -67,6 +67,7 @@ table {
   color: #222;
   border: 2px solid #169;
   border-collapse: collapse;
+  width: 60%
 }
 
 th {
