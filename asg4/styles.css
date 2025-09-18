@@ -37,10 +37,12 @@ h2 {
 p, adress {
          font-family: "Palatino Linotype", Baskerville, serif;
          font-size: 1.25em;
-         color: #616161;
+         color: black;
          line-height: 150%;
          margin-top: 10px;
-         margin-left: 60px;           
+         margin-left: 60px;
+         background-color: white;
+      
 }
 
 .intro {
@@ -79,3 +81,8 @@ td {
   padding: 10px;
 }
 
+a {
+   background-color: Pink;
+   color: black;
+   opacity: 0.75;
+}     
