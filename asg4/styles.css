@@ -96,3 +96,42 @@ a {
   text-decoration: none; 
   font-weight: bold;     
 }
+
+body {
+  font-family: 'Libre Bodoni', serif;
+  margin: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: red;
+}
+
+.emphasis {
+  font-style: italic;
+  color: #555;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.artist {
+  color: darkblue;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.rating {
+  color: darkred;
+}
