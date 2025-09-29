@@ -1,6 +1,6 @@
 html {
       padding-top: 25px;
-      background-image: url(./assets/img/BGI.jpg);
+      
 }
 
 body {
@@ -9,6 +9,10 @@ body {
       margin: 0 auto;
       border-radius: 10px;
       box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+      background-image:url(./assets/img/BGI.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
      
 }
 
