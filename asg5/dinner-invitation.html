@@ -7,9 +7,131 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>An Evening of Extraordinary Conversation</h1>
+            <p class="subtitle">A Dinner Party with History's Most Fascinating Minds</p>
+        </header>
 
-	<h1>Dinner Invitation</h1>
-	
-	
+        <div class="guests-section">
+            <div class="guest">
+                <div class="guest-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/800px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg" alt="Albert Einstein">
+                </div>
+                <div class="guest-info">
+                    <h2>Albert Einstein</h2>
+                    <p>I would be honored to host Albert Einstein, whose groundbreaking theories revolutionized our understanding of space, time, and the universe itself. Beyond his scientific genius, Einstein was a passionate violinist, a humanist, and a philosopher who understood that imagination is more important than knowledge. I'm fascinated by his ability to think in thought experiments and visualize complex physics in simple, elegant ways. Over dinner, I would love to discuss not just relativity and quantum mechanics, but his views on creativity, education, and what it means to live a meaningful life. His wit, humility, and childlike wonder about the cosmos would make for an absolutely captivating evening of conversation.</p>
+                </div>
+            </div>
+
+            <div class="guest">
+                <div class="guest-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Ada_Lovelace_portrait.jpg/800px-Ada_Lovelace_portrait.jpg" alt="Ada Lovelace">
+                </div>
+                <div class="guest-info">
+                    <h2>Ada Lovelace</h2>
+                    <p>Ada Lovelace, the world's first computer programmer, would bring a unique 19th-century perspective on technology that feels remarkably modern. As the daughter of Lord Byron, she combined poetic imagination with mathematical rigor, envisioning how Charles Babbage's Analytical Engine could go beyond mere calculation to create art and music. I'm captivated by her ability to see potential where others saw only machinery. Dining with Ada would offer insight into how a pioneering woman navigated the male-dominated scientific world of Victorian England while maintaining her visionary thinking. Her notes on the Analytical Engine essentially predicted modern computing over a century before it existed, and I would love to hear her thoughts on how technology intersects with human creativity and whether she imagined a world like ours.</p>
+                </div>
+            </div>
+
+            <div class="guest">
+                <div class="guest-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Mark_Twain%2C_Brady-Handy_photo_portrait%2C_Feb_7%2C_1871%2C_cropped.jpg/800px-Mark_Twain%2C_Brady-Handy_photo_portrait%2C_Feb_7%2C_1871%2C_cropped.jpg" alt="Mark Twain">
+                </div>
+                <div class="guest-info">
+                    <h2>Mark Twain</h2>
+                    <p>No dinner party would be complete without Mark Twain's razor-sharp wit and storytelling prowess. America's greatest humorist was also a keen social critic who used laughter as a weapon against hypocrisy and injustice. Twain's adventures as a riverboat pilot, prospector, and world traveler gave him endless material for stories that are both hilarious and profound. I would relish his commentary on human nature, his thoughts on writing and creativity, and his irreverent takes on politics and society. Twain had the rare gift of making people laugh while making them think, and his presence would ensure the evening is filled with both intellectual stimulation and genuine entertainment. Plus, his famous love of food and good company would make him appreciate every course of the meal!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Tonight's Menu</h2>
+            <div class="menu">
+                <h3>Appetizers</h3>
+                <ul>
+                    <li>Seared Scallops with Lemon Butter and Microgreens</li>
+                    <li>Heirloom Tomato and Burrata Bruschetta</li>
+                    <li>Truffle-infused Wild Mushroom Soup</li>
+                </ul>
+
+                <h3>Main Course</h3>
+                <ul>
+                    <li>Herb-Crusted Rack of Lamb with Rosemary Jus</li>
+                    <li>Pan-Seared Chilean Sea Bass with Saffron Risotto</li>
+                    <li>Wild Mushroom and Gruyère Wellington (Vegetarian)</li>
+                </ul>
+
+                <h3>Sides</h3>
+                <ul>
+                    <li>Roasted Root Vegetables with Honey Glaze</li>
+                    <li>Garlic-Butter Asparagus</li>
+                    <li>Duchess Potatoes</li>
+                </ul>
+
+                <h3>Dessert</h3>
+                <ul>
+                    <li>Dark Chocolate Lava Cake with Raspberry Coulis</li>
+                    <li>Classic Crème Brûlée</li>
+                    <li>Selection of Artisan Cheeses with Port Wine</li>
+                </ul>
+
+                <h3>Beverages</h3>
+                <ul>
+                    <li>Vintage Bordeaux and Napa Valley Chardonnay</li>
+                    <li>Craft Cocktails and Mocktails</li>
+                    <li>Freshly Brewed Coffee and Assorted Teas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rsvp-section">
+            <h2>RSVP</h2>
+            <form id="rsvpForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Will you be bringing a guest?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="guestYes" name="bringingGuest" value="yes" required>
+                            <label for="guestYes">Yes</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="guestNo" name="bringingGuest" value="no" required>
+                            <label for="guestNo">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="dietary">Dietary Preferences or Restrictions:</label>
+                    <textarea id="dietary" name="dietary" placeholder="Please let us know of any allergies, preferences, or restrictions..."></textarea>
+                </div>
+
+                <button type="submit">Submit RSVP</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>We look forward to an evening of brilliant minds, delicious cuisine, and unforgettable conversation.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('rsvpForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const guest = document.querySelector('input[name="bringingGuest"]:checked').value;
+            const dietary = document.getElementById('dietary').value;
+            
+            alert(`Thank you for your RSVP, ${name}!\n\nBringing a guest: ${guest}\nDietary notes: ${dietary || 'None specified'}\n\nWe can't wait to see you at the dinner party!`);
+            
+            this.reset();
+        });
+    </script>
 </body>
 </html>
