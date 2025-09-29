@@ -18,7 +18,7 @@ body {
 h1 {
          font-family: "UnifrakturMaguntia", cursive;
          font-weight: 400;
-         font-style: normal;       
+         font-style: bold;       
          color: #5682B1; 
          font-size: 11em;
          margin:0;
@@ -42,9 +42,9 @@ h2 {
 
 p, adress {
          font-family: "Yellowtail", cursive;
-         font-weight: 400;
+         font-weight: normal;
          font-style: normal;
-         font-size: 1.25em;
+         font-size: 1.5em;
          color: #000000;
          line-height: 150%;
          margin-top: 10px;
