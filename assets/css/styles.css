@@ -13,8 +13,9 @@ body {
 }
 
 h1 {
-         font-family: "Libre Bodoni", serif;
-         font-weight: normal;       
+         font-family: "Gravitas One", serif;
+         font-weight: normal;
+         font-style: normal;       
          color: #FF007F; 
          font-size: 5em;
          margin:0;
@@ -24,7 +25,7 @@ h1 {
 
 h2 {
          color: #b1967c;
-         font-family: "Varela Round", "Arial Black", sans-serif;
+         font-family: "Gravitas One", serif;
          font-weight: normal;
          font-size: 2.2em; 
          border-bottom: 2px white solid;
@@ -36,7 +37,9 @@ h2 {
 
 
 p, adress {
-         font-family: "Palatino Linotype", Baskerville, serif;
+         font-family: "Yellowtail", cursive;
+         font-weight: 400;
+         font-style: normal;
          font-size: 1.25em;
          color: black;
          line-height: 150%;
@@ -50,22 +53,11 @@ p, adress {
 .intro {
         
        color: #777777;
-       font-family: "Varela Round", "Arial Black", sans-serif;
+       font-family: "Yellowtail", cursive;
        font-size: 1.2em;
        margin-left: 0;
        margin-bottom: 25px;    
              
- }
- ul, li  { 
-      font-size: 20px;
-       color: darked;
-       list-style-type: disc;
-       line-height: 1.6;
-}
-
-ul, li {
-      font-weight: bold;
-}
 
 img {
   border-radius: 10px; 
@@ -81,7 +73,7 @@ a {
 }
 
 body {
-  font-family: 'Libre Bodoni', serif;
+  font-family: "Yellowtail", cursive;
   margin: 20px;
 }
 
