@@ -20,7 +20,7 @@ h1 {
          font-weight: 400;
          font-style: normal;       
          color: #5682B1; 
-         font-size: 5em;
+         font-size: 11em;
          margin:0;
          text-align: center;
          
@@ -28,9 +28,10 @@ h1 {
 
 h2 {
          color: #739EC9;
-         font-family: "Gravitas One", serif;
-         font-weight: normal;
-         font-size: 2.2em; 
+         font-family: "Meie Script", cursive;
+         font-weight: 400;
+         font-style: normal;
+         font-size: 4.2em; 
          border-bottom: 2px white solid;
          background: url(images/head-icon.png) no-repeat 10px 10px;
          padding: 0 0 2px 60px;   
