@@ -110,3 +110,13 @@ body {
 .rating {
   color: darkred;
 }
+ }
+ ul, li  { 
+      font-size: 20px;
+       color: darked;
+       list-style-type: disc;
+       line-height: 1.6;
+}
+
+ul, li {
+      font-weight: bold;
