@@ -115,11 +115,13 @@ body {
 }
  }
  ul, li  { 
-      font-size: 20px;
+       font-family: "Satisfy", cursive;
+       font-weight: 400;
+       font-style: normal;
+       font-size: 20px;
        color: #81BFDA;
        list-style-type: disc;
        line-height: 1.6;
 }
 
-ul, li {
-      font-weight: normal;
+
