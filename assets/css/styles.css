@@ -1,5 +1,120 @@
-/* styles.css */
+html {
+      padding-top: 25px;
+      background-color: #F2F2F2;   
+}
 
-* {
-	font-family: Arial;
+body {
+      width: 80%;
+      padding: 20px;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+     
+}
+
+h1 {
+         font-family: "Libre Bodoni", serif;
+         font-weight: normal;       
+         color: #FF007F; 
+         font-size: 5em;
+         margin:0;
+         text-align: center;
+         
+}
+
+h2 {
+         color: #b1967c;
+         font-family: "Varela Round", "Arial Black", sans-serif;
+         font-weight: normal;
+         font-size: 2.2em; 
+         border-bottom: 2px white solid;
+         background: url(images/head-icon.png) no-repeat 10px 10px;
+         padding: 0 0 2px 60px;   
+         margin: 0;
+}
+
+
+
+p, adress {
+         font-family: "Palatino Linotype", Baskerville, serif;
+         font-size: 1.25em;
+         color: black;
+         line-height: 150%;
+         margin-top: 10px;
+         margin-left: 60px;
+         font-weight: bold;
+         
+      
+}
+
+.intro {
+        
+       color: #777777;
+       font-family: "Varela Round", "Arial Black", sans-serif;
+       font-size: 1.2em;
+       margin-left: 0;
+       margin-bottom: 25px;    
+             
+ }
+ ul, li  { 
+      font-size: 20px;
+       color: darked;
+       list-style-type: disc;
+       line-height: 1.6;
+}
+
+ul, li {
+      font-weight: bold;
+}
+
+img {
+  border-radius: 10px; 
+  display: block;     
+  margin: 20px auto;   
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+a {
+  color: #ff3399;        
+  text-decoration: none; 
+  font-weight: bold;     
+}
+
+body {
+  font-family: 'Libre Bodoni', serif;
+  margin: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: red;
+}
+
+.emphasis {
+  font-style: italic;
+  color: #555;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.artist {
+  color: darkblue;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.rating {
+  color: darkred;
 }
