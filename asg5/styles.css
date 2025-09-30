@@ -5,7 +5,7 @@
         }
 
         body {
-            font-family: 'Cormorant Garamond', serif;
+            font-family: "EB Garamond", serif;
             background: #2c1810;
             background-image: 
                 repeating-linear-gradient(
@@ -57,7 +57,7 @@
         }
 
         h1 {
-            font-family: 'Cinzel', serif;
+            font-family: "Cinzel", serif;
             font-size: 3.5em;
             color: #daa520;
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
@@ -116,7 +116,7 @@
         }
 
         .guest-info h2 {
-            font-family: 'Cinzel', serif;
+            font-family: "Crimson Pro", serif;
             color: #daa520;
             font-size: 2.3em;
             margin-bottom: 20px;
@@ -151,7 +151,7 @@
         }
 
         .menu-section h2 {
-            font-family: 'Cinzel', serif;
+            font-family: "Crimson Pro", serif;
             color: #daa520;
             font-size: 3em;
             text-align: center;
@@ -171,7 +171,7 @@
         }
 
         .menu h3 {
-            font-family: 'Cinzel', serif;
+            font-family: "Crimson Pro", serif;
             color: #daa520;
             font-size: 1.8em;
             margin: 25px 0 15px 0;
