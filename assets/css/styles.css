@@ -108,8 +108,8 @@ a:hover {
 ul, li  { 
        font-family: "Satisfy", cursive;
        font-weight: 400;   
-       font-size: 20px;
-       color: darked;
+       font-size: 18px;
+       color: #1e3d58;
        list-style-type: none;
        line-height: 1.6;
 }
