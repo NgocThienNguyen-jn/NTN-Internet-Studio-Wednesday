@@ -224,11 +224,11 @@ ul, li  {
 .assignment-box li {
   font-family: "Satisfy", cursive;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.75em;
   color: #5682B1;
   margin: 12px 0;
   padding-left: 28px;
-  position: relative;
+  position: center;
 }
 
 .assignment-box li::before {
