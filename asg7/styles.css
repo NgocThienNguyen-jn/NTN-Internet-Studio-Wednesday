@@ -160,13 +160,16 @@
             h1 {
                 font-size: 2rem;
             }
-         ul, li  { 
-      font-size: 2em;
-       color: darked;
+ li  { 
+      font-size: 1.5em;
+       color: black;
        list-style-type: disc;
        line-height: 1.6;
+       font-weight: normal;
 }
 
-ul, li {
-      font-weight: bold;
+ul {
+      font-size: 2em;
+      color: black;
+      font-weight: bold;      
 }
