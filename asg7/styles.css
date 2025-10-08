@@ -5,7 +5,7 @@
         }
         
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: "Patrick Hand", cursive;
             line-height: 1.6;
             color: #2c3e20;
             background: linear-gradient(135deg, #f5e6d3 0%, #d4e7d4 100%);
@@ -21,7 +21,7 @@
         }
         
         h1 {
-            font-family: 'Merriweather', serif;
+            font-family: "DM Serif Text", serif;
             font-size: 3rem;
             margin-bottom: 0.5rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
@@ -60,7 +60,7 @@
         }
         
         h2 {
-            font-family: 'Merriweather', serif;
+            font-family: "Ledger", serif;
             color: #2d5a3d;
             margin-bottom: 1.5rem;
             font-size: 2rem;
@@ -69,7 +69,7 @@
         }
         
         h3 {
-            font-family: 'Merriweather', serif;
+            font-family: "Ledger", serif;
             color: #2d5a3d;
             margin-bottom: 1rem;
             font-size: 1.5rem;
