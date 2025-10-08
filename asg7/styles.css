@@ -145,7 +145,7 @@
             text-align: left;
         }
         
-        @media (max-width: 968px) {
+        @media (max-width: 968px) 
             .container {
                 grid-template-columns: 1fr;
             }
@@ -157,4 +157,4 @@
             h1 {
                 font-size: 2rem;
             }
-        }
+        
