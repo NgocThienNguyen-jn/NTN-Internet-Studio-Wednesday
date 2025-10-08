@@ -80,7 +80,6 @@
         }
         
         .candidate-image {
-            width: 100%;
             max-width: 400px;
             height: 400px;
             background: linear-gradient(135deg, #8b7355 0%, #d4a574 50%, #8b7355 100%);
@@ -94,7 +93,6 @@
         }
         
         .running-mate-image {
-            width: 100%;
             height: 250px;
             background: linear-gradient(135deg, #6b8e23 0%, #9acd32 50%, #6b8e23 100%);
             border-radius: 8px;
