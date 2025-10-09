@@ -1,4 +1,4 @@
-{
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -6,78 +6,139 @@
         
         body {
             font-family: 'Patrick Hand', cursive;
-            line-height: 1.6;
-            color: #2c3e20;
-            background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+            line-height: 1.7;
+            color: #1a1a2e;
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
             min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(138, 43, 226, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
         }
         
         header {
-            background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-            font-size: 4.5rem;
-            color: black;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #f5f5dc;
             text-align: center;
-            padding: 3rem 1rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding: 50px 40px;
-            border-bottom: 5px double #C8A55F;
+            padding: 4rem 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            border-bottom: 4px solid #d4af37;
             position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '⚡';
+            position: absolute;
+            top: 20px;
+            left: 5%;
+            font-size: 3rem;
+            opacity: 0.3;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        header::after {
+            content: '⚡';
+            position: absolute;
+            top: 20px;
+            right: 5%;
+            font-size: 3rem;
+            opacity: 0.3;
+            animation: float 6s ease-in-out infinite 3s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
         }
         
         h1 {
             font-family: 'DM Serif Text', serif;
-            font-size: 6em;
-            font-weight: heavy;
-            margin-bottom: 0.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-size: 4.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7),
+                         0 0 20px rgba(212, 175, 55, 0.5);
+            color: #d4af37;
+            letter-spacing: 3px;
+            text-transform: uppercase;
         }
         
         .tagline {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-style: italic;
-            opacity: 1;
+            color: #f5f5dc;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            font-weight: 600;
         }
         
         .container {
             max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
             display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: 2rem;
+            grid-template-columns: 1fr 320px;
+            gap: 2.5rem;
+            position: relative;
+            z-index: 1;
         }
         
         main {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            background: linear-gradient(135deg, #f5f5dc 0%, #e8e8d8 100%);
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.5);
+            border: 2px solid #d4af37;
         }
         
         aside {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            background: linear-gradient(135deg, #2d2d44 0%, #1a1a2e 100%);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
             height: fit-content;
             position: sticky;
             top: 2rem;
+            border: 2px solid #8b4789;
+            color: #f5f5dc;
         }
         
         h2 {
             font-family: 'Ledger', serif;
-            color: #2d5a3d;
+            color: #0f3460;
             margin-bottom: 1.5rem;
-            font-size: 2rem;
-            border-bottom: 3px solid #4a7c59;
-            padding-bottom: 0.5rem;
+            font-size: 2.5rem;
+            border-bottom: 3px solid #d4af37;
+            padding-bottom: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         
         h3 {
             font-family: 'Ledger', serif;
-            color: #2d5a3d;
+            color: #1a1a2e;
             margin-bottom: 1rem;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        
+        aside h3 {
+            color: #d4af37;
+            text-align: center;
+            font-size: 1.6rem;
         }
         
         .bio-section {
@@ -87,70 +148,111 @@
         .candidate-image {
             max-width: 400px;
             height: 400px;
-            background: linear-gradient(135deg, #8b7355 0%, #d4a574 50%, #8b7355 100%);
-            border-radius: 8px;
-            margin: 1.5rem auto;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #1a1a2e 100%);
+            border-radius: 12px;
+            margin: 2rem auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 6rem;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6),
+                        0 0 40px rgba(212, 175, 55, 0.3);
+            border: 3px solid #d4af37;
+            overflow: hidden;
+        }
+        
+        .candidate-image img {
+            border-radius: 8px;
         }
         
         .running-mate-image {
             height: 250px;
-            background: linear-gradient(135deg, #6b8e23 0%, #9acd32 50%, #6b8e23 100%);
-            border-radius: 8px;
-            margin: 1rem 0;
+            background: linear-gradient(135deg, #8b4789 0%, #6a1b9a 50%, #8b4789 100%);
+            border-radius: 12px;
+            margin: 1.5rem 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 4rem;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5),
+                        0 0 30px rgba(138, 43, 226, 0.3);
+            border: 2px solid #d4af37;
+            overflow: hidden;
+        }
+        
+        .running-mate-image img {
+            border-radius: 8px;
         }
         
         p {
             margin-bottom: 1.5rem;
             text-align: justify;
-            font-size: 1.5em;
-        }
-        
-        .wiki-link {
-            display: inline-block;
-            background: #4a7c59;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            margin: 1rem 0;
-        }
-        
-        .wiki-link:hover {
-            background: #2d5a3d;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        
-        .platform-section {
-            background: #f0f8f0;
-            padding: 2rem;
-            border-radius: 8px;
-            border-left: 5px solid #4a7c59;
-        }
-        
-        aside h3 {
-            text-align: center;
-            font-size: 2em;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: #2d2d2d;
         }
         
         aside p {
             text-align: left;
-            font-size: 1.5em;
+            color: #e8e8d8;
+            font-size: 1.2rem;
         }
         
-        @media (max-width: 968px) 
+        .wiki-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            color: #1a1a2e;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-family: 'Cinzel', serif;
+            transition: all 0.3s ease;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .wiki-link:hover {
+            background: linear-gradient(135deg, #f4d03f 0%, #d4af37 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+        }
+        
+        .platform-section {
+            background: linear-gradient(135deg, #e8e8d8 0%, #d4d4c8 100%);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border-left: 6px solid #d4af37;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        ul {
+            font-size: 1.3rem;
+            color: #1a1a2e;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            font-size: 1.2rem;
+            color: #2d2d2d;
+            list-style-type: none;
+            line-height: 1.8;
+            font-weight: normal;
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+        
+        li::before {
+            content: '⚡';
+            position: absolute;
+            left: 0;
+            color: #d4af37;
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 968px) {
             .container {
                 grid-template-columns: 1fr;
             }
@@ -160,18 +262,10 @@
             }
             
             h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
- li  { 
-      font-size: 1.5em;
-       color: black;
-       list-style-type: disc;
-       line-height: 1.6;
-       font-weight: normal;
-}
-
-ul {
-      font-size: 2em;
-      color: black;
-      font-weight: bold;      
-}
+            
+            .tagline {
+                font-size: 1.3rem;
+            }
+        }
