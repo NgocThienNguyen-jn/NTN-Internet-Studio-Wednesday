@@ -1,25 +1,138 @@
-/* 
-      .--..--..--..--..--..--.
-    .' \  (`._   (_)     _   \
-  .'    |  '._)         (_)  |
-  \ _.')\      .----..---.   /
-  |(_.'  |    /    .-\-.  \  |
-  \     0|    |   ( O| O) | o|
-   |  _  |  .--.____.'._.-.  |
-   \ (_) | o         -` .-`  |
-    |    \   |`-._ _ _ _ _\ /
-    \    |   |  `. |_||_|   |
-    | o  |    \_      \     |     -.   .-.
-    |.-.  \     `--..-'   O |     `.`-' .'
-  _.'  .' |     `-.-'      /-.__   ' .-'
-.' `-.` '.|='=.='=.='=.='=|._/_ `-'.'
-`-._  `.  |________/\_____|    `-.'
-   .'   ).| '=' '='\/ '=' |
-   `._.`  '---------------'
-           //___\   //___\
-             ||       ||
-             ||_.-.   ||_.-.
-            (_.--__) (_.--__)
-       
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
- Insert all your glorious CSS styles below! */
+        body {
+            /* Background image covering entire page */
+            background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?w=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            
+            /* Custom color palette - overlay for readability */
+            background-color: rgba(15, 23, 42, 0.85);
+            background-blend-mode: multiply;
+            
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #e2e8f0;
+            padding: 2em;
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(30, 41, 59, 0.95);
+            padding: 3em;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Header styles - using Montserrat font */
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #60a5fa;
+            margin-bottom: 0.5em;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.75em;
+            font-weight: 600;
+            color: #93c5fd;
+            margin-top: 1.5em;
+            margin-bottom: 0.75em;
+            padding-bottom: 0.3em;
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.35em;
+            font-weight: 600;
+            color: #bfdbfe;
+            margin-top: 1.25em;
+            margin-bottom: 0.5em;
+        }
+
+        /* Paragraph styles - using Open Sans font with modified leading */
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.05em;
+            color: #cbd5e1;
+            margin-bottom: 1.25em;
+            line-height: 1.8; /* Modified leading for better readability */
+            text-align: justify;
+        }
+
+        /* Custom color palette accents */
+        .accent {
+            color: #60a5fa;
+            font-weight: 600;
+        }
+
+        /* Wireframe images section */
+        .wireframe-section {
+            margin-top: 2em;
+            padding: 1.5em;
+            background-color: rgba(51, 65, 85, 0.6);
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .wireframe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+            margin-top: 1.5em;
+        }
+
+        .wireframe-item {
+            background-color: rgba(71, 85, 105, 0.4);
+            padding: 1em;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .wireframe-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 0.5em;
+            border: 2px solid #475569;
+        }
+
+        .wireframe-item p {
+            font-size: 0.95em;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Footer link back to homepage */
+        .back-link {
+            text-align: center;
+            margin-top: 3em;
+            padding-top: 2em;
+            border-top: 1px solid #475569;
+        }
+
+        .back-link a {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .back-link a:hover {
+            color: #93c5fd;
+            text-decoration: underline;
+        }
