@@ -1,83 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visit Wonderland - Homepage</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f4f4;
-    }
-    header {
-      background: #006699;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background: #004466;
-      display: flex;
-      justify-content: center;
-    }
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      display: block;
-    }
-    nav a:hover {
-      background: #00334d;
-    }
-    section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #006699;
-      color: white;
-      margin-top: 30px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam - Discover Rivers, Rhythms & Stories</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>✦ Vietnam Journey ✦</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="activities.html" class="nav-link">Activities</a></li>
+                <li><a href="dining.html" class="nav-link">Dining</a></li>
+                <li><a href="statement.html" class="nav-link">Design</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-ctas">
+                <button class="btn btn-secondary">Contact Us</button>
+                <button class="btn btn-primary">Book Now</button>
+            </div>
+        </div>
+    </nav>
 
-  <header>
-    <h1>Welcome to Wonderland</h1>
-    <p>A magical place to explore and enjoy</p>
-  </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <img src="https://images.unsplash.com/photo-1552088113-92a463bde006?w=1400&h=800&fit=crop" alt="Ha Long Bay limestone karsts at sunrise" class="hero-image">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Vietnam</h1>
+            <p class="hero-tagline">Rivers, Rhythms, and Timeless Stories</p>
+        </div>
+    </section>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="activities.html">Activities</a>
-    <a href="dining.html">Place To Eat</a>
-    <a href="statement.html">Statement</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-text">
+                <p>Vietnam is a country of contrasts and enchantment, where ancient traditions seamlessly blend with vibrant modern culture. From the emerald waters of Hạ Long Bay to the illuminated lantern streets of Hội An, every landscape tells a story of resilience, beauty, and timeless grace. This Southeast Asian gem offers travelers an unforgettable journey through breathtaking natural wonders, world-class cuisine, and the warm hospitality of its diverse people.</p>
+                <p>Whether you're seeking adventure in mountain treks, cultural immersion in historic cities, or culinary delights in bustling street markets, Vietnam welcomes you with open arms. The country's rich tapestry of 54 ethnic groups, each with distinct traditions and crafts, creates a cultural experience unlike anywhere else on Earth. Come discover why travelers from around the world are falling in love with Vietnam.</p>
+            </div>
+        </div>
+    </section>
 
-  <section>
-    <h2>Discover Wonderland</h2>
-    <p>
-      Wonderland is a breathtaking destination filled with natural beauty, 
-      cultural landmarks, and endless adventures. Whether you are here to 
-      enjoy the landscapes, taste the food, or meet the people, Wonderland 
-      offers something unforgettable for everyone.
-    </p>
-    <p>
-      Start your journey today and explore all the wonders we have prepared 
-      for you.
-    </p>
-  </section>
+    <!-- Highlights Section -->
+    <section class="highlights-section">
+        <div class="container">
+            <h2>Why Vietnam?</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🌤️</div>
+                    <h3>3 Climate Zones</h3>
+                    <p>Year-round travel opportunities with tropical, subtropical, and temperate zones. Visit whenever suits your adventure.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🎭</div>
+                    <h3>54 Ethnic Groups</h3>
+                    <p>Rich cultural traditions and unique perspectives. Experience authentic heritage, crafts, and traditions at every turn.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🍜</div>
+                    <h3>World-Class Cuisine</h3>
+                    <p>Ranked among the world's best culinary destinations. From morning phở to night market delights, taste your way through Vietnam.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏛️</div>
+                    <h3>UNESCO Sites</h3>
+                    <p>8 UNESCO World Heritage sites including Hạ Long Bay, Hội An, and Phong Nha-Ke Bang National Park.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏰</div>
+                    <h3>Colonial Heritage</h3>
+                    <p>Stunning French colonial architecture blended with Vietnamese tradition creates unique urban landscapes.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🎋</div>
+                    <h3>Natural Beauty</h3>
+                    <p>From limestone karsts to rice terraces, lush jungles to pristine beaches—nature in its most captivating form.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Visit Wonderland. All Rights Reserved.</p>
-  </footer>
+    <!-- Featured Experiences -->
+    <section class="featured-section">
+        <div class="container">
+            <h2>Explore What Awaits</h2>
+            <p class="section-intro">Discover three unforgettable experiences that showcase Vietnam's incredible diversity.</p>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Ha Long Bay cruise">
+                    <h3>Cruise Hạ Long Bay</h3>
+                    <p>Experience the mystical limestone karsts and emerald waters of UNESCO's most iconic destination.</p>
+                    <a href="activities.html#halongbay" class="link-arrow">Learn More →</a>
+                </div>
+                <div class="featured-card">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop" alt="Hoi An lanterns">
+                    <h3>Ancient Hội An</h3>
+                    <p>Walk through centuries of history in this enchanting town where lanterns glow and time stands still.</p>
+                    <a href="activities.html#hoian" class="link-arrow">Learn More →</a>
+                </div>
+                <div class="featured-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Sapa mountains">
+                    <h3>Trek Sapa Mountains</h3>
+                    <p>Meet ethnic minorities, explore terraced rice fields, and experience authentic mountain culture.</p>
+                    <a href="activities.html#sapa" class="link-arrow">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- CTA Band -->
+    <section class="cta-band">
+        <div class="container">
+            <h2>Ready to Plan Your Journey?</h2>
+            <p>Let us help you create unforgettable memories in Vietnam</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary-large">Plan Your Route</button>
+                <button class="btn btn-secondary-large">Get Custom Itinerary</button>
+                <button class="btn btn-accent">Talk to Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><strong>Email:</strong> info@vietnamjourney.com</p>
+                    <p><strong>Phone:</strong> +84 (0) 123-456-789</p>
+                    <p><strong>Address:</strong> Hanoi, Vietnam</p>
+                    <p><strong>Hours:</strong> 24/7 for inquiries</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="dining.html">Dining</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vietnam Journey. All rights reserved. | Designed with passion for travel.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
