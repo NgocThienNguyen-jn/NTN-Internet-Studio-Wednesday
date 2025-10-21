@@ -1,5 +1,5 @@
 
-        /* Color Palette inspired by coolors.co */
+        
         :root {
             --bg-primary: #FAF3E0;
             --bg-secondary: #EABF9F;
@@ -9,7 +9,7 @@
             --accent-dark: #8B6F47;
         }
 
-        /* Fluid Type Scale */
+        
         :root {
             --fs-300: clamp(0.875rem, 0.8rem + 0.375vw, 1.125rem);
             --fs-400: clamp(1rem, 0.9rem + 0.5vw, 1.313rem);
@@ -129,5 +129,5 @@
         }
 
        
-        }
+        
  
