@@ -1,3 +1,6 @@
+/* CUSTOM FONT IMPORTS */
+
+/* Vast Shadow font - decorative display font with shadow effect */
 @font-face {
   font-display: swap;
   font-family: 'Vast Shadow';
@@ -5,6 +8,8 @@
   font-weight: 800;
   src: url('fonts/vast-shadow-v21-latin-regular.woff2') format('woff2');
 } 
+
+/* Sancreek font - western/vintage style display font */
 @font-face {
   font-display: swap;
   font-family: 'Sancreek';
@@ -12,180 +17,275 @@
   font-weight: 800;
   src: url('fonts/sancreek-v27-latin-regular.woff2') format('woff2');
 }    
-  @font-face {
+
+/* Domine font - serif font for body text */
+@font-face {
   font-display: swap;
   font-family: 'Domine';
   font-style: normal;
   font-weight: 800;
   src: url('fonts/domine-v25-latin-regular.woff2') format('woff2');
 }    
-        :root {
-            --fluid-min-width: 320;
-            --fluid-max-width: 1200;
-            --fluid-screen: 100vw;
-            --fluid-bp: calc(
-                (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
-                (var(--fluid-max-width) - var(--fluid-min-width))
-            );
-        }
-        
-        @media screen and (min-width: 1200px) {
-            :root {
-                --fluid-screen: calc(var(--fluid-max-width) * 1px);
-            }
-        }
-        
-      
-        :root {
-            --f--2: calc(0.64rem + (0.8 - 0.64) * var(--fluid-bp));
-            --f--1: calc(0.8rem + (1 - 0.8) * var(--fluid-bp));
-            --f-0: calc(1rem + (1.25 - 1) * var(--fluid-bp));
-            --f-1: calc(1.25rem + (1.563 - 1.25) * var(--fluid-bp));
-            --f-2: calc(1.563rem + (1.953 - 1.563) * var(--fluid-bp));
-            --f-3: calc(1.953rem + (2.441 - 1.953) * var(--fluid-bp));
-            --f-4: calc(2.441rem + (3.052 - 2.441) * var(--fluid-bp));
-        }
-        
-        
-        :root {
-            --color-primary: #FF6B35;      
-            --color-secondary: #004E89;    
-            --color-accent: #F7B801;       
-            --color-dark: #1A1A2E;         
-            --color-light: #FEFEFE;        
-            --color-bg-overlay: rgba(26, 26, 46, 0.85);
-        }
-        
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: "Domine", serif;
-            font-size: var(--f-0);
-            line-height: 1.6;
-            color: var(--color-light);
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-            background-attachment: fixed;
-            background-size: cover;
-            min-height: 100vh;
-            position: relative;
-        }
-        
-        
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);
-            z-index: -1;
-        }
-        
-       
-        h1 {
-            font-family: "Sancreek", serif;
-            font-size: var(--f-4);
-            font-weight: 800;
-            color: var(--color-accent);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-            margin-bottom: 0.5em;
-        }
-        
-        h2 {
-            font-family: "Vast Shadow", serif;
-            font-size: var(--f-2);
-            font-weight: 700;
-            color: var(--color-primary);
-            margin-bottom: 0.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-        }
-        
-        p {
-            font-size: var(--f-0);
-            margin-bottom: 1em;
-            line-height: 1.7;
-        }
-        
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 3em 2em;
-            background: var(--color-bg-overlay);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-        }
-        
-        
-        .header {
-            text-align: center;
-            margin-bottom: 3em;
-            padding-bottom: 2em;
-            border-bottom: 3px solid var(--color-primary);
-        }
-        
-        .intro {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: var(--f-1);
-            color: var(--color-light);
-        }
-        
-        
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2em;
-            justify-content: center;
-        }
-        
-        .team-member {
-            flex: 1 1 300px;
-            max-width: 350px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 1.5em;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 2px solid transparent;
-        }
-        
-        .team-member:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 24px rgba(255, 107, 53, 0.4);
-            border-color: var(--color-accent);
-        }
-        
-        .team-member img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 1em;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-        
-        .team-member p {
-            font-size: var(--f--1);
-            color: var(--color-light);
-        }
-        
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 2em 1em;
-            }
-            
-            .team-member {
-                flex: 1 1 100%;
-                max-width: 100%;
-            }
-      
+/* FLUID TYPOGRAPHY SYSTEM */
+
+/* Base fluid typography variables - enables responsive font sizing */
+:root {
+    /* Minimum viewport width for fluid scaling (320px) */
+    --fluid-min-width: 320;
+    
+    /* Maximum viewport width for fluid scaling (1200px) */
+    --fluid-max-width: 1200;
+    
+    /* Current screen width */
+    --fluid-screen: 100vw;
+    
+    /* Breakpoint calculation for interpolation between min and max */
+    --fluid-bp: calc(
+        (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+        (var(--fluid-max-width) - var(--fluid-min-width))
+    );
+}
+
+/* Cap fluid screen width at maximum breakpoint */
+@media screen and (min-width: 1200px) {
+    :root {
+        --fluid-screen: calc(var(--fluid-max-width) * 1px);
+    }
+}
+
+/* FLUID FONT SIZE SCALE */
+
+/* Modular scale with fluid sizing between min and max viewport widths */
+:root {
+    /* Extra small text (0.64rem - 0.8rem) */
+    --f--2: calc(0.64rem + (0.8 - 0.64) * var(--fluid-bp));
+    
+    /* Small text (0.8rem - 1rem) */
+    --f--1: calc(0.8rem + (1 - 0.8) * var(--fluid-bp));
+    
+    /* Base text size (1rem - 1.25rem) */
+    --f-0: calc(1rem + (1.25 - 1) * var(--fluid-bp));
+    
+    /* Medium heading (1.25rem - 1.563rem) */
+    --f-1: calc(1.25rem + (1.563 - 1.25) * var(--fluid-bp));
+    
+    /* Large heading (1.563rem - 1.953rem) */
+    --f-2: calc(1.563rem + (1.953 - 1.563) * var(--fluid-bp));
+    
+    /* Extra large heading (1.953rem - 2.441rem) */
+    --f-3: calc(1.953rem + (2.441 - 1.953) * var(--fluid-bp));
+    
+    /* Display heading (2.441rem - 3.052rem) */
+    --f-4: calc(2.441rem + (3.052 - 2.441) * var(--fluid-bp));
+}
+
+/* ============================================
+   COLOR PALETTE
+   ============================================ */
+
+:root {
+    /* Primary accent color - warm orange */
+    --color-primary: #FF6B35;
+    
+    /* Secondary color - deep blue */
+    --color-secondary: #004E89;
+    
+    /* Accent highlight - golden yellow */
+    --color-accent: #F7B801;
+    
+    /* Dark background - navy */
+    --color-dark: #1A1A2E;
+    
+    /* Light text/background - off-white */
+    --color-light: #FEFEFE;
+    
+    /* Semi-transparent overlay */
+    --color-bg-overlay: rgba(26, 26, 46, 0.85);
+}
+
+/* GLOBAL RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY STYLES & GRADIENT BACKGROUND */
+
+body {
+    /* Typography */
+    font-family: "Domine", serif;
+    font-size: var(--f-0);
+    line-height: 1.6;
+    color: var(--color-light);
+    
+    /* Vibrant gradient background (purple to pink) */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    /* Minimum height for full viewport coverage */
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Diagonal stripe pattern overlay for visual texture */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Repeating diagonal stripes with transparency */
+    background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);
+    
+    /* Behind all content */
+    z-index: -1;
+}
+
+/* TYPOGRAPHY - HEADINGS */
+
+/* Main page title */
+h1 {
+    font-family: "Sancreek", serif;
+    font-size: var(--f-4);
+    font-weight: 800;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    
+    /* Drop shadow for depth */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.5em;
+}
+
+/* Section headings */
+h2 {
+    font-family: "Vast Shadow", serif;
+    font-size: var(--f-2);
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.5em;
+    
+    /* Subtle drop shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* TYPOGRAPHY - PARAGRAPHS */
+
+p {
+    font-size: var(--f-0);
+    margin-bottom: 1em;
+    line-height: 1.7;
+}
+
+/* LAYOUT - MAIN CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3em 2em;
+    
+    /* Glass-morphism effect */
+    background: var(--color-bg-overlay);
+    backdrop-filter: blur(10px);
+    
+    /* Soft shadow for elevation */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* HEADER SECTION */
+
+.header {
+    text-align: center;
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+    
+    /* Bottom border separator */
+    border-bottom: 3px solid var(--color-primary);
+}
+
+/* Introduction text container */
+.intro {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: var(--f-1);
+    color: var(--color-light);
+}
+
+/* TEAM GALLERY GRID */
+
+.gallery {
+    /* Flexbox grid layout with wrapping */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+/* TEAM MEMBER CARDS */
+
+.team-member {
+    /* Flexible sizing with min/max constraints */
+    flex: 1 1 300px;
+    max-width: 350px;
+    
+    /* Card styling */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5em;
+    border: 2px solid transparent;
+    
+    /* Smooth hover animations */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect - lift and glow */
+.team-member:hover {
+    /* Lift card up */
+    transform: translateY(-8px);
+    
+    /* Orange glow effect */
+    box-shadow: 0 12px 24px rgba(255, 107, 53, 0.4);
+    
+    /* Highlight border */
+    border-color: var(--color-accent);
+}
+
+/* Team member portrait images */
+.team-member img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    
+    /* Image depth shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Team member description text */
+.team-member p {
+    font-size: var(--f--1);
+    color: var(--color-light);
+}
+
+/*  RESPONSIVE DESIGN - MOBILE */
+
+@media (max-width: 768px) {
+    /* Reduce container padding on small screens */
+    .container {
+        padding: 2em 1em;
+    }
+    
+    /* Stack team members vertically on mobile */
+    .team-member {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
