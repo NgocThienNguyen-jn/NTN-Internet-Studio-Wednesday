@@ -275,17 +275,3 @@ p {
     color: var(--color-light);
 }
 
-/*  RESPONSIVE DESIGN - MOBILE */
-
-@media (max-width: 768px) {
-    /* Reduce container padding on small screens */
-    .container {
-        padding: 2em 1em;
-    }
-    
-    /* Stack team members vertically on mobile */
-    .team-member {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
