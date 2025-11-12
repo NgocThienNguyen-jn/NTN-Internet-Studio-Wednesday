@@ -44,7 +44,7 @@
         }
         
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: "Are You Serious", cursive;
             font-size: var(--f-0);
             line-height: 1.6;
             color: var(--color-light);
@@ -70,7 +70,7 @@
         
        
         h1 {
-            font-family: 'Poppins', sans-serif;
+            font-family: "Sancreek", serif;
             font-size: var(--f-4);
             font-weight: 800;
             color: var(--color-accent);
@@ -81,7 +81,7 @@
         }
         
         h2 {
-            font-family: 'Poppins', sans-serif;
+            font-family: "Vast Shadow", serif;
             font-size: var(--f-2);
             font-weight: 700;
             color: var(--color-primary);
