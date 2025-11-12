@@ -1,4 +1,24 @@
-    
+@font-face {
+  font-display: swap;
+  font-family: 'Vast Shadow';
+  font-style: normal;
+  font-weight: 800;
+  src: url('fonts/vast-shadow-v21-latin-regular.woff2') format('woff2');
+} 
+@font-face {
+  font-display: swap;
+  font-family: 'Sancreek';
+  font-style: normal;
+  font-weight: 800;
+  src: url('fonts/sancreek-v27-latin-regular.woff2') format('woff2');
+}    
+  @font-face {
+  font-display: swap;
+  font-family: 'Domine';
+  font-style: normal;
+  font-weight: 800;
+  src: url('fonts/domine-v25-latin-regular.woff2') format('woff2');
+}    
         :root {
             --fluid-min-width: 320;
             --fluid-max-width: 1200;
