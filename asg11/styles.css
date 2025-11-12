@@ -1,6 +1,5 @@
 /* CUSTOM FONT IMPORTS */
 
-/* Vast Shadow font - decorative display font with shadow effect */
 @font-face {
   font-display: swap;
   font-family: 'Vast Shadow';
@@ -9,7 +8,6 @@
   src: url('fonts/vast-shadow-v21-latin-regular.woff2') format('woff2');
 } 
 
-/* Sancreek font - western/vintage style display font */
 @font-face {
   font-display: swap;
   font-family: 'Sancreek';
@@ -18,7 +16,6 @@
   src: url('fonts/sancreek-v27-latin-regular.woff2') format('woff2');
 }    
 
-/* Domine font - serif font for body text */
 @font-face {
   font-display: swap;
   font-family: 'Domine';
@@ -31,16 +28,13 @@
 
 /* Base fluid typography variables - enables responsive font sizing */
 :root {
-    /* Minimum viewport width for fluid scaling (320px) */
+
     --fluid-min-width: 320;
     
-    /* Maximum viewport width for fluid scaling (1200px) */
     --fluid-max-width: 1200;
-    
-    /* Current screen width */
+
     --fluid-screen: 100vw;
-    
-    /* Breakpoint calculation for interpolation between min and max */
+
     --fluid-bp: calc(
         (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
         (var(--fluid-max-width) - var(--fluid-min-width))
@@ -58,53 +52,40 @@
 
 /* Modular scale with fluid sizing between min and max viewport widths */
 :root {
-    /* Extra small text (0.64rem - 0.8rem) */
+    
     --f--2: calc(0.64rem + (0.8 - 0.64) * var(--fluid-bp));
-    
-    /* Small text (0.8rem - 1rem) */
+
     --f--1: calc(0.8rem + (1 - 0.8) * var(--fluid-bp));
-    
-    /* Base text size (1rem - 1.25rem) */
+
     --f-0: calc(1rem + (1.25 - 1) * var(--fluid-bp));
-    
-    /* Medium heading (1.25rem - 1.563rem) */
+
     --f-1: calc(1.25rem + (1.563 - 1.25) * var(--fluid-bp));
-    
-    /* Large heading (1.563rem - 1.953rem) */
+
     --f-2: calc(1.563rem + (1.953 - 1.563) * var(--fluid-bp));
-    
-    /* Extra large heading (1.953rem - 2.441rem) */
+
     --f-3: calc(1.953rem + (2.441 - 1.953) * var(--fluid-bp));
     
-    /* Display heading (2.441rem - 3.052rem) */
     --f-4: calc(2.441rem + (3.052 - 2.441) * var(--fluid-bp));
 }
 
-/* ============================================
-   COLOR PALETTE
-   ============================================ */
+/* COLOR PALETTE */
 
 :root {
-    /* Primary accent color - warm orange */
+    
     --color-primary: #FF6B35;
-    
-    /* Secondary color - deep blue */
+
     --color-secondary: #004E89;
-    
-    /* Accent highlight - golden yellow */
+
     --color-accent: #F7B801;
-    
-    /* Dark background - navy */
+
     --color-dark: #1A1A2E;
-    
-    /* Light text/background - off-white */
+
     --color-light: #FEFEFE;
-    
-    /* Semi-transparent overlay */
+
     --color-bg-overlay: rgba(26, 26, 46, 0.85);
 }
 
-/* GLOBAL RESET */
+
 
 * {
     margin: 0;
