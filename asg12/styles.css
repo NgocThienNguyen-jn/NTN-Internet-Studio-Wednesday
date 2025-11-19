@@ -1,3 +1,28 @@
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Allerta Stencil';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/allerta-stencil-v24-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Delius';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/delius-v21-latin-regular.woff2') format('woff2'); 
+}  
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/press-start-2p-v16-latin-regular.woff2') format('woff2'); 
+} 
+
 * {
             margin: 0;
             padding: 0;
@@ -5,7 +30,8 @@
         }
 
         body {
-            font-family: 'Lato', sans-serif;
+            font-family: "Delius", cursive;
+            font-weight: 400;
             font-size: 16px;
             line-height: 1.6;
             color: #2c3e50;
@@ -22,7 +48,8 @@
 
         /* ===== HEADER STYLES ===== */
         h1 {
-            font-family: 'Playfair Display', serif;
+            font-family: "Press Start 2P", system-ui;
+            font-weight: 400;
             font-size: 3em;
             color: #1a202c;
             text-align: center;
@@ -31,7 +58,8 @@
         }
 
         h2 {
-            font-family: 'Playfair Display', serif;
+            font-family: "Allerta Stencil", sans-serif;
+            font-weight: 400;
             font-size: 1.3em;
             color: #667eea;
             margin-bottom: 0.5em;
