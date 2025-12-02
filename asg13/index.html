@@ -1,15 +1,281 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Website Template (Please update for full credit)</title>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dream Job Search</title>
+    <style>
+        /* Google Fonts - Poppins (headings) and Open Sans (body) */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2em 1em;
+        }
+
+        /* Container for main content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 3em 2em;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        /* Heading Styles */
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 0.3em;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2em;
+            font-weight: 600;
+            color: #2a5298;
+            margin: 1.5em 0 0.8em 0;
+            padding: 0 2em;
+        }
+
+        /* Introduction Section */
+        .intro {
+            padding: 2em;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            border-left: 5px solid #667eea;
+            margin: 2em;
+            border-radius: 10px;
+        }
+
+        .intro p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* Job Listings Grid */
+        .job-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2em;
+            padding: 2em;
+            margin-bottom: 2em;
+        }
+
+        /* Individual Job Card */
+        .job-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 2em;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid #667eea;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .job-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Company Logo Container */
+        .logo-container {
+            width: 100%;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5em;
+            background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+            border-radius: 10px;
+            padding: 1em;
+        }
+
+        .company-logo {
+            max-width: 180px;
+            max-height: 100px;
+            object-fit: contain;
+        }
+
+        /* Job Title */
+        .job-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #1e3c72;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        /* Job Description */
+        .job-description {
+            font-size: 1em;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 1.5em;
+            flex-grow: 1;
+        }
+
+        /* Apply Button */
+        .apply-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.8em 2em;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .apply-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        /* Footer */
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 2em;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+                padding: 0 1em;
+            }
+
+            .job-grid {
+                grid-template-columns: 1fr;
+                padding: 1em;
+            }
+
+            .intro {
+                margin: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>🚀 My Dream Job Search</h1>
+            <p style="position: relative; z-index: 1; font-size: 1.2em; margin-top: 0.5em;">Finding the Perfect Role in Tech</p>
+        </header>
 
-	<h1>Website Template</h1>
-	<p>Fork and use this template repo (a.k.a. "boilerplate") for any web project</p>
-	
+        <section class="intro">
+            <h2>About My Career Goals</h2>
+            <p>
+                As a passionate developer and designer, I'm seeking opportunities that combine creativity with technical excellence. My ideal role would allow me to work on innovative projects that make a real impact on users' lives, while collaborating with talented teams who value continuous learning and growth. I'm particularly drawn to positions that offer a balance between frontend development and user experience design, where I can leverage my skills in modern web technologies like React, TypeScript, and responsive design frameworks. I thrive in environments that encourage experimentation, embrace new technologies, and prioritize creating intuitive, accessible digital experiences. Whether it's building elegant user interfaces, optimizing performance, or conducting user research, I'm excited to contribute my skills to a forward-thinking organization that values both technical craftsmanship and design thinking.
+            </p>
+        </section>
+
+        <h2>Featured Job Opportunities</h2>
+
+        <div class="job-grid">
+            
+            <div class="job-card">
+                <div class="logo-container">
+                    <svg class="company-logo" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="10" width="280" height="80" fill="#E50914" rx="5"/>
+                        <text x="150" y="65" font-family="Arial, sans-serif" font-size="45" font-weight="bold" fill="white" text-anchor="middle">NETFLIX</text>
+                    </svg>
+                </div>
+                <h3 class="job-title">Software Engineer Frontend (L5) - Data Experience</h3>
+                <p class="job-description">
+                    This Netflix position is perfect for me because it combines my passion for creating intuitive data visualizations with frontend engineering at scale. Working on Netflix's data experience platform would allow me to solve complex UI challenges that directly impact how millions of users interact with content recommendations and analytics. The role emphasizes mentoring other engineers and presenting complex ideas clearly, which aligns with my collaborative approach and desire to grow as a technical leader. Additionally, Netflix's culture of innovation and their use of cutting-edge technologies like React and GraphQL would provide endless learning opportunities. The remote work option and competitive compensation ($100K - $720K) make this an incredibly attractive opportunity for building my career at a company that's revolutionizing entertainment.
+                </p>
+                <a href="https://www.glassdoor.com/Job/remote-front-end-developer-jobs-SRCH_IL.0,6_IS11047_KO7,26.htm" target="_blank" class="apply-btn">View Job Listing →</a>
+            </div>
+
+            
+            <div class="job-card">
+                <div class="logo-container">
+                    <svg class="company-logo" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="150" cy="50" r="35" fill="#FFD900"/>
+                        <text x="150" y="90" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#000000" text-anchor="middle">BUMBLE</text>
+                    </svg>
+                </div>
+                <h3 class="job-title">Senior Product Designer, Bumble Date</h3>
+                <p class="job-description">
+                    The Bumble Senior Product Designer role excites me because it focuses on creating meaningful human connections through thoughtful design on mobile platforms. This position offers the unique opportunity to work on products that genuinely improve people's lives and relationships, which deeply resonates with my values as a designer. The emphasis on end-to-end product design, from research to high-fidelity prototypes, matches my comprehensive skill set and desire to own the entire design process. Bumble's commitment to empowering women and creating safe, respectful digital spaces aligns with my belief that technology should be inclusive and ethical. Additionally, working in Austin, Texas provides an excellent quality of life with a thriving tech community. The role's focus on mobile-first experiences would push me to refine my skills in designing for smaller screens while maintaining excellent usability.
+                </p>
+                <a href="https://www.indeed.com/q-ux-designer-l-austin,-tx-jobs.html" target="_blank" class="apply-btn">View Job Listing →</a>
+            </div>
+
+            
+            <div class="job-card">
+                <div class="logo-container">
+                    <svg class="company-logo" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="20" y="20" width="260" height="60" fill="#6B4CE6" rx="8"/>
+                        <text x="150" y="60" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">TECH STARTUP</text>
+                    </svg>
+                </div>
+                <h3 class="job-title">Frontend Developer - React/Next.js</h3>
+                <p class="job-description">
+                    This frontend developer position represents an ideal opportunity to work with modern technologies that I'm passionate about, particularly React and Next.js. The role emphasizes building scalable, reliable frontend applications with strong attention to performance and accessibility, which are principles I deeply care about in my work. What makes this especially appealing is the focus on web accessibility and performance tuning, demonstrating that the company prioritizes creating inclusive experiences for all users. The mention of working with design systems and collaborating closely with designers aligns perfectly with my background in both development and UX. The startup environment would provide invaluable experience in making architectural decisions and seeing the direct impact of my work on the product's success. With competitive compensation and the opportunity to work remotely, this role offers the perfect blend of technical challenges, creative problem-solving, and work-life balance.
+                </p>
+                <a href="https://www.monster.com/jobs/q-web-developer-jobs" target="_blank" class="apply-btn">View Job Listing →</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 My Job Search Portfolio | Created for Assignment 13</p>
+            <p style="margin-top: 0.5em; font-size: 0.85em;">Fonts: Poppins & Open Sans from Google Fonts</p>
+        </footer>
+    </div>
 </body>
 </html>
